@@ -1,0 +1,252 @@
+.container{
+    margin: 0 auto;
+    max-width: 1170px;
+}
+body{
+    font-family:'Valera Round', sans-serif;
+
+}
+img{
+    max-width:100%;
+    height: auto;
+}
+h4{
+    font-size:42px;
+    color:#26272d;
+}
+p{
+    font:20px 'Lato', sans-serif;
+    color:#8c8f94;
+}
+.clearfix::after{
+    content:'';
+    height: 0;
+    display: block;
+    clear:both;
+}
+/*topHeader*/
+.topHeader{
+    background: url('../img/headerBg.jpg')top center repeat-x;
+    height:1000px; 
+}
+.topHeader__nav{
+    padding-top:50px; 
+    position: relative;
+}
+.topHeader__nav h1{
+    text-align: center;
+    color:#26272d;
+    text-transform: uppercase;
+    font-size:16px;
+}
+.topHeader__nav h1 span{
+    color:#000;
+}
+.nav__left{
+    position: absolute;
+    left:0;
+    top:40px;
+}
+.nav__left ul , .nav__right ul {
+    list-style:none;
+/*    margin-top: 0;*/
+    padding-left:0; 
+}
+.nav__left ul li , .nav__right ul li{
+    display: inline-block;
+    margin-right: 40px;
+}
+.nav__left ul li a , .nav__right ul li a{
+    font:16px 'Lato' , sans-serif;
+    color:#26272d;
+    text-decoration: none;
+}
+.nav__right ul li:first-child a{
+    color:#ccc;    
+}
+.nav__right ul li:last-child{
+    margin-right: 0;
+}
+.nav__right ul li:last-child a{
+    color:#fff;
+    padding:14px 21px 14px 46px;
+    background: #267df4;
+    border-radius:20px; 
+    position: relative;
+    
+}
+.nav__right ul li:last-child a:hover{
+    text-decoration: none;
+    background: green;
+}
+.nav__right ul li:last-child a::before{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    left:15px;
+    top:50%;
+    margin-top: -12px;
+    width: 16px;
+    height:20px;
+    background: url('../img/apple.png') left center no-repeat;
+}
+.nav__left ul li a:hover ,.nav__right ul li a:hover{
+    text-decoration: underline;
+}
+.nav__right{
+    position: absolute;
+    right:0;
+    top:45px;
+}
+.nav__right button{
+    float: right;
+}
+.topHeaderTittle{
+    margin-top:130px;
+    text-align: center;
+    color:#26272d;
+    font-size:62px;
+}
+.topHeaderText{
+    font:16px 'Lato' , sans-serif;
+    color:#8c8f94;
+    text-align: center; 
+}
+.topHeaderBtn{
+    padding: 16px 45px;
+    background: #edf0f2;
+    border:1px solid #d9dcde;
+    border-radius:20px; 
+    color:#26272d;
+    font:16px 'Lato',sans-serif; 
+    cursor: pointer;
+    position: relative;
+    left:50%;
+    margin-left: -91px;
+    margin-top: 60px;
+}
+.topHeaderBtn::before{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top:50%;
+    left:15%;
+    margin-top: -5px;
+    width: 10px;
+    height: 10px;
+    background: url('../img/arrowR.png')no-repeat;
+}
+/*/topHeader*/
+
+/*main*/
+.main__top{
+    margin-top: 100px;
+}
+
+.main__topL{
+    width:45%;
+    float:left;
+    margin-left:5%; 
+}
+.main__topL::before{
+    content: '';
+    display: block;
+    width: 42px;
+    height: 51px;
+    background: url('../img/keyIcon.png')left center no-repeat;
+}
+.main__topR{
+    width: 45%;
+    float:right;
+}
+.main__topR::before{
+    content: '';
+    display: block;
+    width: 42px;
+    height: 51px;
+    background: url('../img/clock.png')left center no-repeat;
+}
+.topContent h3{
+    font:26px 'Lato', sans-serif;
+    font-weight: lighter;
+    color:#26272d;
+}
+.topContent p{
+    font:16px 'Lato',sans-serif;
+    color:#8c8f94;
+}
+.main__center{
+    margin-top:150px;
+    position: relative;
+}
+.iphone{
+    position:absolute;
+/*    overflow: hidden;*/
+    left:-190px;
+}
+.main__centerR{
+    float:right;
+    width:40%;
+}
+.main__centerBtns{
+    margin-top: 77px;
+}
+.hack{
+    padding:15px 75px 15px 25px;
+    background: #267df4;
+    border-radius:25px;
+    text-decoration: none;
+    font:20px 'Lato' ,sans-serif;
+    color:#fff;
+    position: relative;
+}
+.hack::after{
+    content:'';
+    display: inline-block;
+    position: absolute;
+    top:50%;
+    margin-top:-5.5px;
+    left:80%;
+    width: 13px;
+    height: 11px;
+    background: #fff;
+    background: url('../img/arrowRW.png')no-repeat;
+}
+.more{
+    padding: 15px 30px;
+    font:16px 'Lato', sans-serif;
+    color:#26272d;
+    text-decoration: none;
+    border:1px solid #e9e9ea;
+    border-radius:25px;
+    margin-left:25px; 
+}
+.main__bottom{
+    margin-top:450px;
+    position: relative;
+    overflow: hidden;
+}
+.main__bottomL{
+    float:left;
+    width:40%;
+}
+.drop{
+    display: inline-block;
+    width:125px;
+    height: 34px;
+    background: url('../img/dropbox.jpg');
+    margin-right: 20px;
+}
+.evernote{
+    display: inline-block;
+    width:138px;
+    height: 35px;
+    background: url('../img/evernote.jpg');
+}
+
+.map{
+    position: absolute;
+    right:-300px;
+   
+}
+/*/main*/
